@@ -425,7 +425,7 @@ module.exports = function (grunt) {
   grunt.registerTask( 'dev', [ 'clean','sass', 'copy', 'assemble', 'uglify:dev','browserSync','watch' ] );
 
   // Build task
-  grunt.registerTask( 'build', [ 'sass', 'copy', 'assemble', 'cloudinary', 'cssnano', 'uglify:build', 'gh-pages:build' ] );
+  grunt.registerTask( 'build', [ 'sass', 'copy', 'assemble', 'cssnano', 'uglify:build', 'gh-pages:build' ] );
 
   // Staging task
   grunt.registerTask( 'staging', [ 'sass', 'copy', 'assemble', 'cssnano', 'uglify:build', 'gh-pages:staging' ] );
